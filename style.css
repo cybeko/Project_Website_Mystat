@@ -151,7 +151,7 @@ header
     flex-basis: 10vh;
     display: flex;
     flex-direction: row;
-    font-size: 1.1em;
+    font-size: 1em;
 }
     header .pfp
     {
@@ -764,13 +764,18 @@ main
     .block-container .side-container .block
     {
         width: 95%;
-        height: 20vh;
+        height: 22vh;
         background-color: rgb(255, 255, 255);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-bottom: 20px;
+        overflow: hidden;
+    }
+    .block-container .side-container .block p
+    {
+        font-size: 0.8em;
     }
         .block-container .side-container .block div
         {
@@ -937,6 +942,9 @@ main
             {
                 color: white;
             }
+            .block-container .block .field-section .lower .section p
+            {
+            }
             .block-container .block .field-section .lower .section .field
             {
                 background-color: white;
@@ -946,6 +954,7 @@ main
                 align-items: center;
                 justify-content: center;
                 padding: 0% 5%;
+                font-size: 0.9em;
             }
 
 input[type="text"]
@@ -1018,7 +1027,7 @@ textarea[name="comment"]
         margin-bottom: 10px;
     }
 }
-@media (max-width: 2000px)
+@media (max-width: 1500px)
 {
     .block-container
     {
